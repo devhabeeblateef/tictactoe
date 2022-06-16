@@ -84,7 +84,6 @@ if (!winner &&  squares. every(value => value !== null))
   }
   return (
     <div>
-    <center>
     <h2>Tic Tac Toe</h2>
     <p>{status}</p>
     <button onClick={resetGame} disabled={!reset}>{message}</button>

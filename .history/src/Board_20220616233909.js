@@ -3,6 +3,7 @@ import Square from './Square'
 import classes from './App.module.css'
 
 function Board() {
+    <center></center>
   const [reset, setReset] = useState(false);
   const [squares, setSquares] = useState(Array(9).fill(null));
   const [isX, setIsX] = useState(true);
@@ -84,7 +85,6 @@ if (!winner &&  squares. every(value => value !== null))
   }
   return (
     <div>
-    <center>
     <h2>Tic Tac Toe</h2>
     <p>{status}</p>
     <button onClick={resetGame} disabled={!reset}>{message}</button>
@@ -106,7 +106,6 @@ if (!winner &&  squares. every(value => value !== null))
     </div>
     
   </div>
-  </center>
   </div>
   )
 }
